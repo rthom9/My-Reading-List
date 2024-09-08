@@ -116,9 +116,9 @@ export const BooksTable = ( { books, sort_alphabetical, sort_reverse_alphabetica
                         </td>
                         <td className="border border-slate-700 rounded-md text-center">
                             <div className="flex justify-center gap-x-4">
-                                <Link to={`./books/details/${book._id}`}>
+                                {/* <Link to={`./books/details/${book._id}`}>
                                     <BsInfoCircle className="text-2xl text-green-800" />
-                                </Link>
+                                </Link> */}
                                 <button onClick={() => {
                                     setSelectedBook(book)
                                     setShowBookModal(true)}}>
@@ -127,9 +127,9 @@ export const BooksTable = ( { books, sort_alphabetical, sort_reverse_alphabetica
                                 <Link to={`./books/update/${book._id}`}>
                                     <AiOutlineEdit className="text-2xl text-yellow-600" />
                                 </Link>
-                                <Link to={`./books/delete/${book._id}`}>
+                                {/* <Link to={`./books/delete/${book._id}`}>
                                     <AiOutlineDelete className="text-2xl text-red-600" />
-                                </Link>
+                                </Link> */}
                                 <button onClick={() => {
                                     setSelectedBook(book)
                                     setDeleteModal(true)}}>
